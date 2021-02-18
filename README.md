@@ -1,4 +1,4 @@
-# Topcoder Kafka Processor
+# Kafka Model Processor
 
 ## Requirements
 
