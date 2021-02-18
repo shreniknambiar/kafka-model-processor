@@ -1,0 +1,39 @@
+{
+  "name": "shapeup-kafka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "standard \"**/*.js\"",
+    "lint:fix": "standard --fix"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.30.0",
+    "connect": "^3.2.0",
+    "bluebird": "^3.5.1",
+    "get-parameter-names": "^0.3.0",
+    "http-errors": "^1.6.3",
+    "joi": "^13.4.0",
+    "express": "^4.15.4",
+    "js-yaml": "^3.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.10",
+    "memory-cache": "^0.2.0",
+    "no-kafka": "^3.2.10",
+    "superagent": "^3.8.3",
+    "swagger-tools": "^0.10.4",
+    "winston": "^3.0.0"
+  },
+  "engines": {
+    "node": "~8"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
