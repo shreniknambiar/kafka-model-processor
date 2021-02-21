@@ -1,4 +1,4 @@
-# Topcoder Kafka Processor
+# Kafka Model Processor
 
 ## Requirements
 
@@ -21,19 +21,17 @@ If not then all commands need to be run inside the kafka binaries folder (which 
 
 Edit Zookeeper & Kafka configs (present in config/zookeeper.properties for zookeeper and config/server.properties for kafka) using a text editor.
 
-4. I have attached a screenshot (in docs/screenshots for reference)
-
 zookeeper.properties: dataDir=/your/path/to/data/zookeeper (in my case it is dataDir=/home/shrenik/kafka_2.13-2.7.0/data/zookeeper)
 
 server.properties: log.dirs=/your/path/to/data/kafka (in my case it is dataDir=/home/shrenik/kafka_2.13-2.7.0/data/kafka)
 
-5. Start Zookeeper first in one terminal window: 
+4. Start Zookeeper first in one terminal window: 
 
 ```bash
 zookeeper-server-start.sh config/zookeeper.properties
 ```
 
-6. Start Kafka in another terminal window: 
+5. Start Kafka in another terminal window: 
 
 ```bash
 kafka-server-start.sh config/server.properties
@@ -79,8 +77,6 @@ Import the postman collection from `docs/`
 ```bash
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic lookup.notification --from-beginning
 ```
-
-Refer to the output screenshot in docs/screenshots/consumer.png
 
 You should get the req.body which you entered in api body
 
