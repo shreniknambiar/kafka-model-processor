@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "0e9081b8-ccfc-4f40-840e-10f911e0fda5",
+		"name": "Kafka_events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sent events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"topic\": \"lookup.notification\",\n    \"originator\": \"tc-notifications\",\n    \"timestamp\": \"2018-04-13T00:00:00Z\",\n    \"mimeType\": \"application/json\",\n    \"payload\": [\n        \"sajka\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
